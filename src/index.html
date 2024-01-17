@@ -6,26 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proto 1</title>
     <link href="./css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 
 <body>
-    <span class="bg-white flex w-full flex-col pl-5 pr-16 pt-5 pb-12 max-md:max-w-full max-md:px-5 relative">
+    <span id="games" class="bg-white flex w-full flex-col pl-5 pr-16 pt-5 pb-12 max-md:max-w-full max-md:px-5 relative">
         <div class="self-stretch flex w-full items-stretch justify-between gap-5 max-md:max-w-full max-md:flex-wrap">
             <img loading="lazy" src="./img/logo2024.png"
                 class="aspect-[1.42] object-contain object-center w-[222px] overflow-hidden shrink-0 max-w-full" />
             <span class="flex justify-between gap-24 mt-5 self-start items-start max-md:max-w-full max-md:flex-wrap">
+                <a href="#games">
                 <div class="text-black text-xl">
-                    Baltic Games
-                    <br />
+                    Baltic Games<br/>
                 </div>
+                </a>
+                <a href="#schedule">
                 <div class="text-black text-xl">Schedule</div>
+                </a>
+                <a href="#about">
                 <div class="text-black text-xl">About</div>
+                </a>
                 <div class="text-black text-xl">Sponsors</div>
             </span>
         </div>
         <div
             class="text-black text-right text-5xl font-bold whitespace-nowrap ml-24 mt-24 self-start max-md:text-4xl max-md:ml-2.5 max-md:mt-10">
-            25-27 May 20<span class="text-teal-500">24</span>
+            25-27 April 20<span class="text-teal-500">24</span>
         </div>
         <div class="text-black text-7xl font-bold ml-24 mt-6 self-start max-md:max-w-full max-md:text-4xl">
             United By Skills
@@ -36,7 +42,7 @@
         <div class="flex gap-96">
             <div
                 class="text-black text-4xl leading-10 max-w-[880px] ml-24 mt-32 mb-20 self-start max-md:max-w-full max-md:my-10">
-                XXIX Baltic Games for Vocational Schools take place in May 2024. Athletes from
+                XXIX Baltic Games for Vocational Schools take place in April 2024. Athletes from
                 <span class="font-bold">Estonia</span>,
                 <span class="font-bold">Latvia</span>, and
                 <span class="font-bold">Lithuania</span> compete in basketball, volleyball, and table tennis. Proudly
@@ -46,14 +52,15 @@
                 <br />
                 Join the celebration of Baltic talent and sportsmanship
             </div>
-            <img loading="lazy" src="./img/bigjumper.png"
-                class="aspect-[0.26] object-contain object-center w-[344px] overflow-hidden z-[1] max-w-full mr-11 self-end max-md:mt-0 max-md:mr-2.5" />
+              <img loading="lazy"
+                   src="./img/bigjumper.png"
+                   class="aspect-[0.5] object-cover object-top w-[344px] z-[1] max-w-full mr-11 self-end max-md:mt-0 max-md:mr-2.5" />
 
         </div>
     </span>
     
     <!-- Second page -->
-        <span class="block w-full h-[1175px] bg-variable-collection-t-rkiissinine bg-teal-500">
+        <span id="schedule" class="block w-full h-[1175px] bg-variable-collection-t bg-teal-500">
             <span class="relative block w-[1556px] h-[1175px] -top-38 -left-58">
                 <img class="absolute w-[800px] h-[588px] top-[585px] left-[0px] object-cover" alt="Dropshadow"
                     src="./img/dropshadow.png" />
@@ -67,6 +74,12 @@
                     class="absolute top-[10px] left-0 text-shadow font-bold text-[#0000001a] text-[320px] tracking-[0] leading-[normal]">
                     Schedule
                 </span>
+                    <span class="absolute top-[400px] left-[740px] flex">
+                        <div class="pr-4 font-bold text-xl">May 26th</div>
+                        <div class="pr-4 font-bold text-xl ml-24 mr-24">May 27th</div>
+                        <div class="font-bold text-xl">May 28th</div>
+                    </span>
+
                 <span class="absolute w-[779px] h-[396px] top-[502px] left-[606px]">
                     <span class="absolute w-[779px] h-[223px] top-[128px] left-0">
                         <span class="absolute w-[779px] h-[139px] top-[84px] left-0">
@@ -129,6 +142,50 @@
                 </span>
             </span>
         </span>
+        <!-- Third page -->
+    <span id="about" class="z-[1] flex grow flex-col items-stretch mt-6 px-5 max-md:max-w-full bg-red-500">
+      <header class="text-black text-opacity-40 text-[500px] font-bold max-md:max-w-full max-md:text-4xl"> About </header>
+      <div class="w-[512px] max-w-full ml-60 mt-4 self-start">
+        <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
+          <div class="flex flex-col items-stretch w-3/5 max-md:w-full max-md:ml-0">
+            <div class="flex flex-col items-stretch max-md:mt-10">
+              <span class="justify-between items-stretch flex gap-5 p-2.5">
+                <div class="text-black text-3xl font-semibold grow whitespace-nowrap"> Our Mission </div>
+                <i class="fas fa-arrow-left text-black text-xl mt-3 ml-2"></i>
+              </span>
+              <span class="justify-between items-stretch flex gap-5 p-2.5">
+                <div class="text-black text-3xl font-semibold">Winners</div>
+                <i class="fas fa-arrow-left text-black text-xl mt-3 ml-2"></i>
+              </span>
+              <span class="justify-between items-stretch flex gap-5 p-2.5">
+                <div class="text-black text-3xl font-semibold">History</div>
+                <i class="fas fa-arrow-left text-black text-xl mt-3 ml-2"></i>
+              </span>
+            </div>
+          </div>
+          <div class="flex flex-col items-stretch w-2/5 ml-5 max-md:w-full max-md:ml-0">
+            <img src="img/võrkpallur.png" />
+          </div>
+        </div>
+      </div>
+    </span>
+    <span>
+        <div class="flex justify-between p-40">
+            <img src="img/EKKSL.png" class="max-w-[40%]" />
+            <img src="img/voco.png" class="max-w-[40%]" />
+        </div>
+            <div class="flex justify-between pl-20 pr-40">
+                <img src="img/funmaker.png" class="max-w-[20%]" />
+                <img src="img/easl.png" class="max-w-[20%]" />
+                <img src="img/Kultuurkapital.png" class="max-w-[20%]" />
+            </div>
+        <div class="flex justify-between p-40">
+            <img src="img/UnitedMotors.png" class="max-w-[70%]" />
+            <img src="img/kultuur.jpg" class="max-w-[30%]" />
+        </div>
+    </span>
+    <div class="block w-full h-[475px] bg-variable-collection-t bg-black"></div>
 </body>
+
 
 </html>
