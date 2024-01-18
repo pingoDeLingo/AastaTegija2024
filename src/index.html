@@ -36,9 +36,11 @@
             class="text-black text-right text-5xl font-bold whitespace-nowrap ml-24 mt-24 self-start max-md:text-4xl max-md:ml-2.5 max-md:mt-10">
             25-27 April 20<span class="text-teal-500">24</span>
         </div>
+        <span class="">
         <div class="text-black text-7xl font-bold ml-24 mt-6 self-start max-md:max-w-full max-md:text-4xl">
             United By Skills
         </div>
+        </span>
         <div class="text-black text-3xl italic font-light ml-24 mt-4 self-start max-md:max-w-full">
             Just For The Thrill Of It
         </div>
@@ -147,34 +149,39 @@
             </span>
         </span>
         <!-- Third page -->
-        <div class="history-page">
-            <div class="overlap-group">
-              <div class="tekst"><div class="tekst-p"></div></div>
-              <div class="rectangle"></div>
-              <img class="vrkpallur" src="img/v-rkpallur.png" />
-              <div class="our-mission">
+    <div class="history-page">
+        <div class="overlap-group">
+            <div class="tekst">
+                <div class="tekst-p"></div>
+            </div>
+            <div class="rectangle"></div>
+            <img class="vrkpallur" src="img/v-rkpallur.png" />
+            <div class="our-mission" id="content">
+                <!-- Initially display the About content -->
                 <p class="text-wrapper">
-                  The Baltic States - Estonian, Latvian and Lithuanian - sports games in vocational<br />education aim is to
-                  promote the growth of athletic results as well as to strengthen the<br />friendship between the young
-                  people, educators, educational institutions and the management.<br /><br />Instructions for Baltic Games
-                  2024-2027 can be found HERE
+                    The Baltic States - Estonian, Latvian and Lithuanian - sports games in vocational<br />education aim is to
+                    promote the growth of athletic results as well as to strengthen the<br />friendship between the young
+                    people, educators, educational institutions and the management.<br /><br />Instructions for Baltic Games
+                    2024-2027 can be found HERE
                 </p>
-              </div>
             </div>
-            <div class="suurim"><div class="div">About</div></div>
-            <div class="avanev-dropdown-menu">
-              <div class="dropdown">Our Mission</div>
-              <img class="arrow" src="img/arrow-1-1.svg" />
-            </div>
-            <div class="avanev-dropdown-menu-2">
-              <div class="dropdown">Winners</div>
-              <img class="arrow" src="img/arrow-1-1.svg" />
-            </div>
-            <div class="avanev-dropdown-menu-3">
-              <div class="dropdown">History</div>
-              <img class="arrow" src="img/arrow-1-1.svg" />
-            </div>
-          </div>
+        </div>
+        <div class="suurim">
+            <div class="div">About</div>
+        </div>
+        <div class="avanev-dropdown-menu" id="missionDropdown">
+            <div class="dropdown">Our Mission</div>
+            <img class="arrow" src="img/arrow-1-1.svg" />
+        </div>
+        <div class="avanev-dropdown-menu-2" id="winnersDropdown">
+            <div class="dropdown">Winners</div>
+            <img class="arrow" src="img/arrow-1-1.svg" />
+        </div>
+        <div class="avanev-dropdown-menu-3" id="historyDropdown">
+            <div class="dropdown">History</div>
+            <img class="arrow" src="img/arrow-1-1.svg" />
+        </div>
+    </div>
         
         
         <span id="sponsors">
@@ -211,6 +218,31 @@
         </div>
     </div>
 </body>
+<script>
+    // Function to replace the content with Lorem Ipsum
+    function replaceLoremIpsum() {
+        document.getElementById('content').innerHTML = '<p class="text-wrapper">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>';
+    }
+
+    // Function to replace the content with history text
+    function replaceHistory() {
+        document.getElementById('content').innerHTML = '<p class="text-wrapper">The history of Baltic Games...</p>';
+    }
+
+    // Function to replace the content with About text
+    function replaceAbout() {
+        document.getElementById('content').innerHTML = '<p class="text-wrapper">The Baltic States - Estonian, Latvian and Lithuanian - sports games in vocational<br />education aim is to promote the growth of athletic results as well as to strengthen the<br />friendship between the young people, educators, educational institutions and the management.<br /><br />Instructions for Baltic Games 2024-2027 can be found HERE</p>';
+    }
+
+    // Event listener for the Winners dropdown click
+    document.getElementById('winnersDropdown').addEventListener('click', replaceLoremIpsum);
+
+    // Event listener for the History dropdown click
+    document.getElementById('historyDropdown').addEventListener('click', replaceHistory);
+
+    // Event listener for the About dropdown click
+    document.getElementById('missionDropdown').addEventListener('click', replaceAbout);
+</script>
 
 
 </html>
