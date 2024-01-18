@@ -82,14 +82,14 @@
                     <span class="absolute top-[400px] left-[740px] flex">
                         <div id="april25thDropdown" class="font-bold text-xl hover:border-white hover:border-2 hover:rounded-full">April 25th</div>
                         <div id="april26thDropdown" class="font-bold text-xl ml-24 mr-24 hover:border-white hover:border-2 hover:rounded-full">April 26th</div>
-                        <div class="font-bold text-xl hover:border-white hover:border-2 hover:rounded-full">April 27th</div>
+                        <div id="april27thDropdown" class="font-bold text-xl hover:border-white hover:border-2 hover:rounded-full">April 27th</div>
                     </span>
 
 
                  <span id="schedule-content" class="absolute w-[779px] h-[396px] top-[502px] left-[606px] overflow-y-scroll">
                     <span class="absolute w-[779px] h-[223px] top-[128px] left-0">
                         <span class="absolute w-[779px] h-[139px] top-[84px] left-0">
-                            <p id="event2" class="absolute w-[737px] top-[39px] left-[21px] font-normal text-black text-[24px] tracking-[0] leading-[normal]">
+                            <p id="initial" class="absolute w-[737px] top-[39px] left-[21px] font-normal text-black text-[24px] tracking-[0] leading-[normal]">
                                 <span class="font-bold">18.00 - 19.30: Opening ceremony<br /></span>
                                 <span>
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; @ Estonian National Museum (Muuseumi tee 2 Tartu)<br />
@@ -245,6 +245,69 @@
 
         `;
     }
+    function showApril27thEvents() {
+        document.getElementById("schedule-content").innerHTML = `
+                <div class="event3"><h4 style="font-weight: bold">7.30 - 9.00: Breakfast <h4>@ Tartu Vocational College</h4></h4></div>
+                <div class="event3"><h4 style="font-weight: bold">9.00 - 10.00: Volleyball LIT - LAT <span style="font-style: italic">(young women)</span> <h4>@ Variku Sports hall (Aianduse 4 tartu)</h4></h4></div>
+                <div class="event3"><h4 style="font-weight: bold">9.00 - 10.30: Basketball LIT - LAT <span style="font-style: italic">(young men)</span> <h4>@ Variku Sports hall (Aianduse 4 tartu)</h4></h4></div>
+                <div class="event3"><h4 style="font-weight: bold">10.45 - 12.15: Volleyball LIT - LAT <span style="font-style: italic">(young men)</span> <h4>@ Variku Sports hall (Aianduse 4 tartu)</h4></h4></div>
+                <div class="event3"><h4 style="font-weight: bold">10.45 - 12.15: 3x3 basketball LAT - LIT <span style="font-style: italic">(young women)</span> <h4>@ Variku Sports hall (Aianduse 4 tartu)</h4></h4></div>
+                <div class="event3"><h4 style="font-weight: bold">11.30 - 12.00: 3x3 basketball LIT - LAT <span style="font-style: italic">(women)</span> <h4>@ Variku Sports hall (Aianduse 4 tartu)</h4></h4></div>
+                <div class="event3"><h4 style="font-weight: bold">12.15 - 12.45: 3x3 basketball LIT - LAT <span style="font-style: italic">(men)</span> <h4>@ Variku Sports hall (Aianduse 4 tartu)</h4></h4></div>
+                <div class="event3"><h4 style="font-weight: bold">12.30 - 14.0: Lunch<h4>@ Variku Sports hall (Aianduse 4 tartu)</h4></h4></div>
+                <div class="event3"><h4 style="font-weight: bold">14.00: Meeting of the heads of delegation - confirmation of the results<h4>@ Tartu Vocational College</h4></h4></div>
+                <div class="event3"><h4 style="font-weight: bold">14.30: Closing and awarding ceremony<h4>@ Tartu Vocational College</h4></h4></div>
+        `
+    }
+    // Function to show default content
+    function showDefaultContent() {
+        document.getElementById('schedule-content').innerHTML = `
+            <span class="absolute w-[779px] h-[223px] top-[128px] left-0">
+                <span class="absolute w-[779px] h-[139px] top-[84px] left-0">
+                    <p id="initial" class="absolute w-[737px] top-[39px] left-[21px] font-normal text-black text-[24px] tracking-[0] leading-[normal]">
+                        <span class="font-bold">18.00 - 19.30: Opening ceremony<br /></span>
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; @ Estonian National Museum (Muuseumi tee 2 Tartu)<br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </span>
+                    </p>
+                </span>
+                <span class="h-[105px] top-0 absolute w-[779px] left-0">
+                    <p class="top-[29px] font-normal absolute w-[737px] left-[21px] text-black text-[24px] tracking-[0] leading-[normal]">
+                        <span class="font-bold">16.00 - 16.30: Delegation leaders meet and accreditation<br /></span>
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @ Tartu Vocational College<br />
+                            <br />
+                            <br />
+                            <br />
+                        </span>
+                    </p>
+                </span>
+            </span>
+            <span class="absolute w-[779px] h-[178px] top-[-50px] left-0">
+                <span class="h-[116px] top-0 absolute w-[779px] left-0">
+                    <p class="top-[33px] font-normal absolute w-[737px] left-[21px] text-black text-[24px] tracking-[0] leading-[normal]">
+                        <span><br/></span>
+                        <span class="font-bold">13.00 - 15.00: Arrival and accommodation <br /></span>
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @ Tartu Vocational College (Kopli 1, Tartu, C-korpus)<br />
+                            <br />
+                            <span class="font-bold">15.00 - 16.30: Lunch<br /></span>
+                            <br />
+                            <br />
+                        </span>
+                    </p>
+                </span>
+            </span>
+    `;
+    }
+
+    // Event listener for the April 25th dropdown click
+    document.getElementById('april25thDropdown').addEventListener('click', showDefaultContent);
+
 
     // Event listener for the Winners dropdown click
     document.getElementById('winnersDropdown').addEventListener('click', replaceLoremIpsum);
@@ -257,6 +320,9 @@
 
     // Event listener for the April 26th dropdown click
     document.getElementById('april26thDropdown').addEventListener('click', showApril26thEvents);
+
+    // Event listener for the April 27th dropdown click
+    document.getElementById('april27thDropdown').addEventListener('click', showApril27thEvents);
 </script>
 
 
