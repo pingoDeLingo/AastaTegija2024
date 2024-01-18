@@ -1,11 +1,12 @@
 /* Body must be centered with all elements */
 body {
-  margin: 0;
+  margin-top: 1200px;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  scale: 2.4;
 }
 
 .main-page {
