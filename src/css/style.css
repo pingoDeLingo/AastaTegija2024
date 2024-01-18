@@ -1,3 +1,157 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.history-page {
+  position: relative;
+  width: 1900px;
+  height: 1024px;
+  background-color: var(--variable-collection-punane);
+  overflow: hidden;
+}
+
+.history-page .overlap-group {
+  position: absolute;
+  width: 857px;
+  height: 1034px;
+  top: 0;
+  left: 710px;
+}
+
+.history-page .tekst {
+  position: absolute;
+  width: 168px;
+  height: 37px;
+  top: 253px;
+  left: 137px;
+}
+
+.history-page .tekst-p {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.history-page .rectangle {
+  position: absolute;
+  width: 968px;
+  height: 1034px;
+  top: 0;
+  left: 350px;
+  background-color: #ffffff;
+}
+
+.history-page .vrkpallur {
+  position: absolute;
+  width: 184px;
+  height: 558px;
+  top: 466px;
+  left: 250px;
+  object-fit: cover;
+}
+
+.history-page .our-mission {
+  position: absolute;
+  width: 264px;
+  height: 218px;
+  top: 380px;
+  left: 233px;
+}
+
+.history-page .text-wrapper {
+  position: absolute;
+  width: 524px;
+  top: -1px;
+  left: 250px;
+  font-family: "Montserrat-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.history-page .suurim {
+  position: absolute;
+  width: 273px;
+  height: 88px;
+  top: -88px;
+  left: -107px;
+  opacity: 0.16;
+}
+
+.history-page .div {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-weight: 700;
+  color: #00000066;
+  font-size: 600px;
+  letter-spacing: 0.10em;
+  line-height: normal;
+}
+
+.history-page .avanev-dropdown-menu {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 19px;
+  padding: 10px;
+  position: absolute;
+  top: 417px;
+  left: 255px;
+}
+
+.history-page .dropdown {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.history-page .arrow {
+  position: relative;
+  width: 23.5px;
+  height: 22.09px;
+}
+
+.history-page .avanev-dropdown-menu-2 {
+  top: 484px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 19px;
+  padding: 10px;
+  position: absolute;
+  left: 255px;
+}
+
+.history-page .avanev-dropdown-menu-3 {
+  top: 551px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 19px;
+  padding: 10px;
+  position: absolute;
+  left: 255px;
+}
+
+:root {
+  --variable-collection-punane: rgba(239, 64, 68, 1);
+  --variable-collection-t-rkiissinine: rgba(0, 184, 157, 1);
+  --variable-collection-rich-black: rgba(0, 0, 0, 1);
+  --variable-collection-valge: rgba(255, 255, 255, 1);
+}
